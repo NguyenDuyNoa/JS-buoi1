@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 10 | Noa</title>
+</head>
+
+<body>
+    <script>
+        var giaDien;
+        var mucTieuThu = parseFloat(prompt("Nhập số kWh tiêu thụ hàng tháng:"));
+
+        if (mucTieuThu <= 50) {
+            giaDien = mucTieuThu * 1000; // Giá cước: 1000 đồng/kWh
+        } else if (mucTieuThu <= 100) {
+            giaDien = 50 * 1000 + (mucTieuThu - 50) * 1200; // 50 kWh đầu: 1000 đồng/kWh, còn lại: 1200 đồng/kWh
+        } else {
+            giaDien = 50 * 1000 + 50 * 1200 + (mucTieuThu - 100) * 1500; // 50 kWh đầu: 1000 đồng/kWh, 50 kWh tiếp theo: 1200 đồng/kWh, còn lại: 1500 đồng/kWh
+        }
+        alert("Số tiền điện hàng tháng là: " + giaDien + " đồng");
+    </script>
+</body>
+
+</html>

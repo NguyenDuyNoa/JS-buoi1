@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 11 | Noa</title>
+</head>
+
+<body>
+    <script>
+        var thuNhap = parseFloat(prompt("Nhập số thu nhập cá nhân:"));
+
+        var thue = 0;
+
+        if (thuNhap <= 9000) {
+            thue = thuNhap * 0.05; // Thuế 5% cho thuế nhập dưới hoặc bằng 9 triệu
+        } else if (thuNhap <= 15000) {
+            thue = 9000 * 0.05 + (thuNhap - 9000) * 0.1; // 5% cho 9 triệu đầu, 10% cho phần còn lại đến 15 triệu
+        } else {
+            thue = 9000 * 0.05 + 9000 * 0.1 + (thuNhap - 15000) * 0.15; // 5% cho 9 triệu đầu, 10% cho 15 triệu tiếp theo, 15% cho phần còn lại
+        }
+
+        alert("Số thuế thu nhập cá nhân là: " + thue + " nghìn đồng");
+
+    </script>
+</body>
+
+</html>

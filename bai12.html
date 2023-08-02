@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 12 | Noa</title>
+</head>
+
+<body>
+    <script>
+        var soTienGui = parseFloat(prompt("Nhập số tiền gửi (triệu):"));
+        var laiSuatHangThang = parseFloat(prompt("Nhập lãi suất hàng tháng (%):"));
+        var thoiGianGui = parseFloat(prompt("Nhập thời gian gửi (tháng):"));
+        var laiTong = 0;
+
+        for(var i = 0; i <= thoiGianGui; i++){
+            var lai = soTienGui * (laiSuatHangThang / 100);
+            soTienGui += lai;
+            laiTong += lai;
+        }
+
+        alert("Số tiền lãi sau " + thoiGianGui + " tháng là: " + laiTong + " triệu đồng");
+
+    </script>
+</body>
+
+</html>

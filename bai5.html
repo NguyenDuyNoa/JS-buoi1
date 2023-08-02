@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5 | Noa</title>
+</head>
+
+<body>
+    <script>
+        var giuaky = parseFloat(prompt("Nhập vào điểm thi giữa kỳ"));
+        var cuoiky = parseFloat(prompt("Nhập vào điểm thi cuối kỳ"));
+
+        var tongket = (giuaky + cuoiky * 2) / 3;
+        if (tongket > 8) alert("Học sinh giỏi");
+        if (tongket > 6.5) alert("Học sinh khá");
+        if (tongket < 6.5) alert("Học sinh trung bình");
+    </script>
+</body>
+
+</html>

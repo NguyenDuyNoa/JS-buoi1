@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7 | Noa</title>
+</head>
+
+<body>
+    <script>
+        var cuocGoi = 0.2;  // Tỷ lệ cước cho cuộc gọi 
+        var cuocTinNhan = 0.1;  // Tỷ lệ cước cho tin nhắn
+        var cuocDuLieu = 0.2;   // Tỷ lệ cước cho dung lượng dữ liệu
+
+
+        var phutGoi = 100; // Tổng số phút cuộc gọi
+        var tinNhan = 50;  // Tổng số tin nhắn
+        var duLieu = 25;    // Tổng lượng dữ liệu
+
+        var giaGoi = phutGoi * cuocGoi;
+        var giaTinNhan = tinNhan * cuocTinNhan;
+        var giaDuLieu = duLieu * cuocDuLieu;
+
+        var tong = giaGoi + giaTinNhan + giaDuLieu;
+
+        alert("Tổng cước điện thoại của gia đình này là: " + tong + " nghìn")
+    </script>
+</body>
+
+</html>

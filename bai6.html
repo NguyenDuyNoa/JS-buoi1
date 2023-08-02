@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6 | Noa</title>
+</head>
+
+<body>
+    <script>
+        var doanhso = parseFloat(prompt("Nhập vào doanh số"));
+
+        var muc1 = 0.1 // hoa hồng mức 1
+        var muc2 = 0.2 // hoa hồng mức 2
+
+        if (doanhso <= 1000){ // doanh số nhỏ hơn 1000 thì hoa hồng mức 1
+            alert("Tổng hoa hồng nhận được là: " + doanhso*muc1)
+        }
+        if (doanhso > 1000){// doanh số lớn hơn 1000 thì hoa hồng mức 2
+            alert("Tổng hoa hồng nhận được là: " + doanhso*muc2)
+        }
+    </script>
+</body>
+
+</html>
